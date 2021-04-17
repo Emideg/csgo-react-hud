@@ -7,12 +7,20 @@
     transition: opacity 0.75s;
     &.CT {
         .player .hp_bar {
-            background-color: var(--color-new-ct);
+            background-color: var(--color-new-ct) !important;
+        }
+        .player .hp_bar.hp_bar_damage {
+            background-color: red !important;
+            transition: width 1s 2s;
         }
     }
     &.T {
         .player .hp_bar {
-            background-color: var(--color-new-t);
+            background-color: var(--color-new-t) !important;
+        }
+        .player .hp_bar.hp_bar_damage {
+            background-color: red !important;
+            transition: width 1s 2s;
         }
     }
     &.hide {

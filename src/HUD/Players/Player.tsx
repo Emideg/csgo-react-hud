@@ -22,7 +22,7 @@ export default class PlayerBox extends React.Component<IProps> {
     return (
       <div className={`player ${player.state.health === 0 ? "dead" : ""} ${this.props.isObserved ? 'active' : ''}`}>
         <div className="player_data">
-          <Avatar steamid={player.steamid} height={57} width={57} showSkull={false}/>
+          <Avatar steamid={player.steamid} height={57} width={57} showSkull={player.state.health == 0 ? true : false}/>
           <div className="dead-stats">
             <div className="labels">
               <div className="stat-label">K</div>
@@ -37,7 +37,8 @@ export default class PlayerBox extends React.Component<IProps> {
           </div>
           <div className="player_stats">
             <div className="row">
-            <div className={`hp_bar ${player.state.health <= 20 ? 'low':''}`} style={{ width: `calc(${player.state.health}% - 70px)` }}></div>
+            { player.state.health > 0 ? <div className={`hp_bar hp_bar_damage`} style={player.avatar != null ? { width: `calc(${player.state.health}% - 70px)` } : { width: `calc(${player.state.health}%)` }}></div> : null}
+            <div className={`hp_bar ${player.state.health <= 20 ? 'low':''}`} style={ player.avatar != null ? { width: `calc(${player.state.health}% - 70px)` } : { width: `calc(${player.state.health}%)` }}></div>
               <div className="health">
                 {player.state.health}
               </div>
