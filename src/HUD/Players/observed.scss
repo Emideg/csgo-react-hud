@@ -125,6 +125,7 @@
 
     .main_row {
         font-weight: 600;
+        background-color: var(--sub-panel-color);
         .logo {
             height: 43px;
             display: flex;
@@ -141,6 +142,7 @@
         }
         .username_container {
             height: 100%;
+            font-size: 24px;
             flex: 1;
             display: flex;
             align-items: center;
