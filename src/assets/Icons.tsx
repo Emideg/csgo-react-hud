@@ -15,7 +15,7 @@ import { ReactComponent as HealthFull }  from './../assets/images/icon_health_fu
 import { ReactComponent as Hourglass }  from './../assets/images/icon_hourglass_default.svg';
 import { ReactComponent as Microphone }  from './../assets/images/icon_microphone.svg';
 import { ReactComponent as Pause }  from './../assets/images/icon_pause_default.svg';
-import { ReactComponent as Skull }  from './../assets/images/icon_skull_default.svg';
+import { ReactComponent as Skull }  from './../assets/images/icon_skull_new.svg';
 import { ReactComponent as Timer }  from './../assets/images/icon_timer_default.svg';
 import LogoCT  from './../assets/images/logo_CT_default.png';
 import LogoT  from './../assets/images/logo_T_default.png';
