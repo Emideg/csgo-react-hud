@@ -243,7 +243,7 @@ class App extends React.Component<IProps> {
                 Unsupported map
             </div>;
         }
-        return <div className="map-container" style={{ width: size, height: size, transform: `scale(${size / 1024})`, top: -offset, left: -offset }}>
+        return <div className="map-container" style={{ width: size, height: 300, transform: `scale(${size / 1024})`, top: -offset, left: -offset }}>
             <LexoRadar
                 players={players}
                 grenades={grenades}

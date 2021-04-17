@@ -9,6 +9,8 @@
     flex-direction: column;
     color: white;
     background-color: rgba(0,0,0,0.6);
+    background-image: var(--background);
+    background-size: cover;
 
     .main_row, .stats_row {
         flex: 1;
@@ -186,7 +188,7 @@
         width: 140px;
         height: 140px;
         img {
-            border-radius:50%;
+          
         }
     }
     

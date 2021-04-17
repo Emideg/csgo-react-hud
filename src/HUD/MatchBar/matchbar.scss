@@ -129,14 +129,15 @@
 		.logo {
 			display: flex;
 			flex-direction: row;
-			width: 105px;
+			width: 70px;
 			height: 70px;
 			align-items: center;
 			overflow: hidden;
 			background-color: var(--sub-panel-color);
 			img {
 				max-width: 90%;
-				max-height: 65%;
+				max-height: 90%;
+				margin: auto;
 			}
         }
         &.left {
