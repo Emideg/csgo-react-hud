@@ -57,17 +57,49 @@ html, body, .map-container {
     transition: opacity 0.5s ease;
     /*transition: all 0.1s ease;/**/
 }
-.map .player .background {
-    /*background-color:white;*/
-    /*clip-path: polygon(0 0, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0 0);*/
-    background-image: url('./assets/playerBg.png');
+
+.DeadT{
+    background-image: url('./assets/DeadT.png');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     transition:transform 0.1s linear;
+    width: 100%;
+    height: 100%;
 }
+
+.DeadCT{
+    background-image: url('./assets/DeadCT.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition:transform 0.1s linear;
+    width: 100%;
+    height: 100%;
+}
+
+.AliveT{
+    background-image: url('./assets/AliveT.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition:transform 0.1s linear;
+    width: 100%;
+    height: 100%;
+}
+
+.AliveCT{
+    background-image: url('./assets/AliveCT.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition:transform 0.1s linear;
+    width: 100%;
+    height: 100%;
+}
+
 .map .player.dead {
-    opacity: 0.2;
+    opacity: 1;
     z-index: 1;
 }
 .map .player:not(.dead) {
@@ -157,6 +189,14 @@ html, body, .map-container {
     justify-content: center;
 }
 
+.map .player .backgroundDead{
+    position: absolute;
+    width:100%;
+    height:100%;
+    align-items: center;
+    justify-content: center;
+}
+
 .map .player .label {
     color: white;
     font-weight: 600;
@@ -179,13 +219,13 @@ html, body, .map-container {
 }
 .map .bomb.defused .explode-point {
     animation: BombDefused 2s 1 forwards;
-}
+} /*
 .map .player.CT .label {
     background: radial-gradient(rgb(61, 141, 224), rgb(42, 49, 119));
 }
 .map .player.T .label {
-    background: radial-gradient(rgb(255, 129, 0), var(--color-new-t));
-}
+    background: radial-gradient(rgb(255, 129, 0), var(--color-new-t)); 
+} */
 .map .player.T.hasBomb .label {
     background: red;
 }

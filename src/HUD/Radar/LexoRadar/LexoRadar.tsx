@@ -4,6 +4,7 @@ import maps, { ScaleConfig, MapConfig } from './maps';
 import './index.css';
 import { RadarPlayerObject, RadarGrenadeObject } from './interface';
 import config from './config';
+
 interface IProps {
   players: RadarPlayerObject[];
   grenades: RadarGrenadeObject[];
@@ -45,8 +46,15 @@ class App extends React.Component<IProps> {
           width: config.playerSize,
           height: config.playerSize,
         }}>
-        <div className="background" style={{ transform: `rotate(${45 + player.position[2]}deg)` }}></div>
-        <div className="label">{player.label}</div>
+        <div className="background" style={{ transform: `rotate(${45 + player.position[2]}deg)`, display:`${!player.isAlive ? 'none' : 'flex'}`}}>
+          <div className="AliveT" style={{display:`${(player.side === "T")? 'flex' : 'none'}` }}></div>
+          <div className="AliveCT" style={{display:`${(player.side === "CT") ? 'flex' : 'none'}` }}></div>
+        </div>
+        <div className="backgroundDead" style={{display:`${!player.isAlive ? 'flex' : 'none'}` }}> 
+          <div className="DeadT" style={{display:`${(player.side === "T")? 'flex' : 'none'}` }}></div>
+          <div className="DeadCT" style={{display:`${(player.side === "CT") ? 'flex' : 'none'}` }}></div>
+        </div>
+        <div className="label" style={{display:`${!player.isAlive ? 'none' : 'flex'}` }}>{player.label}</div>
       </div>
     )
   }
