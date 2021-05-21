@@ -128,6 +128,10 @@ export default class Layout extends React.Component<Props, State> {
             show={isFreezetime && !forceHide}
           />
         </div>
+
+        <div className={"sponsor"}>
+          
+        </div>
       </div>
     );
   }

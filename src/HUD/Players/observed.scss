@@ -8,9 +8,8 @@
     display: flex;
     flex-direction: column;
     color: white;
-    background-color: rgba(0,0,0,0.6);
-    background-image: var(--background);
-    background-size: cover;
+    background-color: var(--sub-panel-color);
+    transform: scale(0.8);
 
     .main_row, .stats_row {
         flex: 1;
@@ -125,7 +124,6 @@
 
     .main_row {
         font-weight: 600;
-        background-color: var(--sub-panel-color);
         .logo {
             height: 43px;
             display: flex;

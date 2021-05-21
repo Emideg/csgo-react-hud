@@ -24,8 +24,8 @@ export default class SideBox extends React.Component<{ side: 'left' | 'right', h
 	}
 	
 	render() {
-        const { image, title, subtitle} = this.state;
-        if(!title) return '';
+        const { image } = this.state;
+
         const encoding = image && isSvg(Buffer.from(image, 'base64')) ? 'svg+xml':'png';
 		return (
 			<div className={`sidebox ${this.props.side} ${this.props.hide ? 'hide':''}`}>

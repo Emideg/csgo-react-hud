@@ -1,12 +1,13 @@
 .boxes {
 	position: fixed;
-	bottom: 384px;
+	bottom: 350px;
+	transform: scale(0.8);
 }
 .boxes.left {
-	left: 10px;
+	left: -35px;
 }
 .boxes.right {
-	right: 10px;
+	right: -35px;
 }
 .boxes.hide {
 	.utilitybox {
