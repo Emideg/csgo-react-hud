@@ -1,22 +1,20 @@
 {
   "name": "lexogrine_hud",
-  "version": "1.9.0",
+  "version": "1.9.1",
   "homepage": "./",
   "private": true,
   "dependencies": {
-    "@craco/craco": "^5.9.0",
+    "@craco/craco": "^5.7.0",
     "@types/jest": "24.0.19",
-    "@types/node": "^14.14.41",
-    "@types/react": "^17.0.3",
-    "@types/react-dom": "^17.0.3",
-    "csgogsi": "^1.3.3",
-    "csgogsi-socket": "^1.3.3",
-    "node-sass": "^4.14.1",
-    "query-string": "^6.14.1",
-    "react": "^17.0.2",
-    "react-dom": "^16.14.0",
+    "@types/node": "12.11.1",
+    "@types/react": "16.9.9",
+    "@types/react-dom": "16.9.2",
+    "csgogsi-socket": "^2.2.0",
+    "query-string": "^6.12.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "react-scripts": "4.0.0",
-    "socket.io-client": "^2.4.0",
+    "socket.io-client": "^2.3.0",
     "typescript": "3.6.4"
   },
   "license": "GPL-3.0",
@@ -44,11 +42,11 @@
     ]
   },
   "devDependencies": {
-    "@types/history": "^4.7.8",
-    "@types/socket.io-client": "^1.4.36",
+    "@types/history": "^4.7.5",
+    "@types/socket.io-client": "^1.4.32",
     "internal-ip": "^6.2.0",
-    "npm-build-zip": "^1.0.3",
-    "open-browser-plugin": "^1.1.1",
-    "sass": "^1.32.10"
+    "npm-build-zip": "^1.0.2",
+    "open": "^8.0.2",
+    "sass": "^1.32.5"
   }
 }
