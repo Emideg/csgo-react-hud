@@ -12,7 +12,6 @@ body {
   font-family: 'Stratum2', 'Montserrat', 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-image: url('./assets/bg.png'); */
 }
 
 @font-face {
@@ -38,10 +37,11 @@ code {
 .sponsor{
   position: absolute;
   width: 500px;
-  height: 100px;
-  background-color: orange;
+  height: 75px;
   bottom: 10px;
   margin-left: calc(50% - 250px);
+  background-image: url('./assets/Sponsor.png');
+  background-size: cover;
 }
 
 :root {
